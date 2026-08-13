@@ -1,0 +1,95 @@
+.ShopContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.ShopHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.ShopHeader h2 {
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.ShopHeader p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.ProductGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.ProductCard {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.ProductImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+}
+
+.ProductDetails {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.ProductName {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.ProductPrice {
+  font-size: 1.25rem;
+  color: #007bff;
+  font-weight: bold;
+  margin: 0 0 1.5rem 0;
+}
+
+.ATC {
+  margin-top: auto; 
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.ATC:hover {
+  background-color: #007bff;
+}
+
+.ATC:active {
+  transform: scale(0.97);
+}
